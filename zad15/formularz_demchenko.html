@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+ <html lang="pl-PL">
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<title> ZADANIE FORMULARZ </title>
+	</head>
+	<body  style="background-color:#D4F990">
+	<h1 style="text-align:center"> Formularz o zgloszenie do szkolnego zespolu myzycznego </h1>
+	<form enctype="text/plain" action="mailto:mrleoniddemchenko@gmail.com" subject="formularz_dane" method="Post">
+		<TABLE>
+		<TR height="100">
+			<TD width="200">
+					<h2>Dane osobowe</h2>
+					<label for="fname">Imię:</label><br>
+					<input type="text" id="fname" name="firstname" required><br><br>
+
+					<label for="lname">Nazwisko:</label><br>
+					<input type="text" id="lname" name="lastname" required><br><br>
+
+					<label for="class">Klasa:</label><br>
+					<input type="text" id="class" name="class" required><br><br>
+
+					<label for="age">Wiek:</label>
+					<input type="number" id="age" name="age" min="10" max="20" required><br><br>
+
+			</TD>
+			<TD width="400" >
+				<label for="band_name">Nazwa zespołu:</label>
+				<input type="text" id="band_name" name="band_name"><br><br>
+
+				<label for="members">Liczba członków zespołu:</label>
+				<input type="number" id="members" name="members" min="1" max="10" required>	<br><br>	
+			</TD>
+			<TD width="500">
+			<label>Instrument, na którym grasz:</label>
+				<select name="instrument" id="instrument" required>
+					<option value="guitar">Gitara</option>
+					<option value="drums">Perkusja</option>
+					<option value="bass">Gitara basowa</option>
+					<option value="vocals">Wokal</option>
+					<option value="piano">Pianino</option>
+					<option value="other">Inne</option>
+				</select><br><br>
+					<label for="experience">Jakie masz doświadczenie w grze na instrumencie?</label><br>
+					<input type="radio" name="genre" value="0-1" checked> 0-1 lat
+					<input type="radio" name="genre" value="1-2"> 1-2 lat
+					<input type="radio" name="genre" value="2-3"> 2-3 lat
+					<input type="radio" name="genre" value="3-4"> 3-4 lat
+					<input type="radio" name="genre" value="5+"> 5+ lat <br><br>
+			</TD>
+		</TR>
+		<TR height="200">
+			<TD>
+			<label>Gatunki muzyczne, które preferujesz:</label><br>
+				<input type="checkbox" name="genre" value="rock"> Rock<br>
+				<input type="checkbox" name="genre" value="pop"> Pop<br>
+				<input type="checkbox" name="genre" value="jazz"> Jazz<br>
+				<input type="checkbox" name="genre" value="hiphop"> Hip-hop<br>
+				<input type="checkbox" name="genre" value="classical"> Klasyczna<br>
+				<input type="checkbox" name="genre" value="other"> Inne<br><br>			
+				<label for="fav_group">Twój ulubiony zespól muzyczny albo wykonawca</label>
+				<input type="text" id="fav_group" id="fav_group">
+			</TD>
+			<TD> 
+			<label for="color">Wybierz swoj ulubiony kolor</label>
+			<input type="color" name="color"><br><br>
+			<label for="free_time">Czy masz wystarczająco dużo wolnego czasu, aby często chodzić na próby grupowe?</label><br>
+			<input type="radio" name="free_time">TAK
+			<input type="radio" name="free_time">NIE
+			
+			</TD>
+			<TD>
+					<label for="link_test">Link do swojego próbnego nagrania (YouTube, SoundCloud itp.):</label><br><br>
+					<input type="url" id="recording_link" name="link_test"><br><br>
+					<label for="mp3_test">Albo wyslij swoje nagranie plikiem .mp3:</label><br><br>
+					<input type="file" id="mp3_test" name="mp3_test" accept=".mp3">
+			</TD>
+		</TR>
+		<TR height="400">
+			<TD>Dlaczego uważasz, że wlaśnie ciebie powinniśmy przyjąć?:</label>
+				<textarea id="comments" name="comments" rows="10" cols="40"></textarea>
+			</TD>
+			<TD>
+				<img src="https://i.pinimg.com/736x/60/7d/c9/607dc98b59309691ef0cdb8cfee9384b.jpg" style="width:400px; height:200; margin:auto">
+			</TD>
+			<TD>
+				<label for="email"> Twój adres kontaktowy email </label>
+				<input type="text" id="email" name="email"><br><br>
+				<input type="reset" value="Wyczyść formularz">
+				<input type="submit" value="Wyślij zgłoszenie">	
+			</TD>
+		</TR>
+		</TABLE>
+	</form>
+	</body>
+</html>
